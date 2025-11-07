@@ -1,0 +1,10 @@
+{
+  "file_path": "uploads\\04c9a5352ad4fc30.pdf",
+  "file_name": "04c9a5352ad4fc30.pdf",
+  "created_at": "2025-11-07T19:57:34.996143",
+  "chunk_size": 500,
+  "overlap": 50,
+  "total_chunks": 285,
+  "embedding_model": "sentence-transformers/all-MiniLM-L6-v2",
+  "file_hash": "04c9a5352ad4fc30"
+}

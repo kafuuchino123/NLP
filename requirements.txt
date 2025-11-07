@@ -1,7 +1,29 @@
-streamlit
-pypdf
-markdown
-sentence-transformers
-faiss-cpu
-transformers
-torch
+# Web UI
+streamlit>=1.29.0
+
+# 文档处理
+pypdf>=3.17.1         # PDF文件解析
+markdown>=3.5.1       # Markdown解析
+nltk>=3.8.1          # 智能文本分块
+tqdm>=4.66.1         # 进度显示
+
+# 向量化和检索
+sentence-transformers>=2.2.2  # 文本向量化
+faiss-cpu>=1.7.4             # 向量索引（GPU版本：faiss-gpu）
+numpy>=1.24.0                # 数值计算
+
+# 模型和推理
+transformers>=4.36.0  # Hugging Face 模型
+torch>=2.1.0         # PyTorch（GPU版本需匹配CUDA）
+accelerate>=0.25.0   # 模型加载优化
+bitsandbytes>=0.41.0 # 4-bit量化支持（可选）
+
+# 工具和配置
+python-dotenv>=1.0.0  # 环境变量管理
+requests>=2.31.0      # API调用
+typing-extensions>=4.8.0  # 类型提示支持
+dataclasses           # 数据类（Python < 3.7）
+
+# 注意：
+# 1. 如果使用GPU，请安装对应CUDA版本的PyTorch
+# 2. Windows上的bitsandbytes可能需要特定版本
